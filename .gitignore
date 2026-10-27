@@ -1,0 +1,11 @@
+# Source material and unused generated artwork
+NPO法人HP用テキスト.docx
+landscape-illustration.png
+
+# Local packages and operating-system files
+*.zip
+node_modules/
+dist/
+.vercel/
+.DS_Store
+Thumbs.db
