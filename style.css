@@ -21,6 +21,7 @@ h2 { font-size: clamp(30px, 3.2vw, 43px); letter-spacing: .04em; }
 .brand { display: inline-flex; flex-direction: column; }
 .brand-name { font-family: 'DM Sans', sans-serif; font-size: 29px; font-weight: 800; line-height: 1.05; letter-spacing: -.04em; }
 .brand-dot { color: var(--orange); }
+.brand-logo { width: 220px; height: auto; }
 .brand-sub { font-size: 10px; letter-spacing: .1em; margin-top: 8px; }
 .desktop-nav { display: flex; align-items: center; gap: 30px; font-size: 13px; font-weight: 600; }
 .desktop-nav a:not(.nav-contact):hover, .footer-links a:hover { text-decoration: underline; text-underline-offset: 6px; }
@@ -136,6 +137,7 @@ h2 { font-size: clamp(30px, 3.2vw, 43px); letter-spacing: .04em; }
 .capital-grid div { border-top: 1px solid var(--line); padding: 23px 0; }
 .capital-grid dt { font-size: 17px; font-weight: 600; }
 .capital-grid dt span { color: var(--orange); font-family: 'DM Sans',sans-serif; font-size: 11px; margin-right: 12px; }
+.capital-grid dt .keep { color: inherit; font: inherit; margin: 0; display: inline-block; }
 .capital-grid dd { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .organization { padding-block: 70px; border-top: 1px solid var(--line); }
 .organization-grid { display: grid; grid-template-columns: .8fr 1fr; gap: 10%; }
@@ -190,6 +192,7 @@ h2 { font-size: clamp(30px, 3.2vw, 43px); letter-spacing: .04em; }
   .desktop-nav { display: none; }
   .site-header { height: 78px; padding-inline: 24px; }
   .brand-name { font-size: 25px; }
+  .brand-logo { width: 190px; }
   .brand-sub { font-size: 9px; }
   .mobile-nav { display: block; font-size: 12px; font-weight: 600; }
   .mobile-nav summary { list-style: none; cursor: pointer; padding: 10px 0 10px 12px; }
@@ -306,6 +309,7 @@ h2 { font-size: clamp(30px, 3.2vw, 43px); letter-spacing: .04em; }
 @media (max-width: 360px) {
   .site-header { padding-inline: 16px; }
   .brand-name { font-size: 23px; }
+  .brand-logo { width: 170px; }
   .brand-sub { font-size: 8px; }
   .hero-actions { gap: 12px; }
   .hero-actions .button { font-size: 12px; padding-inline: 12px; }
