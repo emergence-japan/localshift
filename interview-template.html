@@ -1,0 +1,114 @@
+<!doctype html>
+<!--
+  Interview article template (NOT published: excluded from scripts/build.mjs).
+  Usage:
+    1. Copy this file as interview-01.html (02, 03 ...).
+    2. Replace every ［...］ placeholder. Guidance is written in HTML comments.
+    3. Remove <meta name="robots" content="noindex">.
+    4. Add the file and its photos to scripts/build.mjs, and add a card to the #interview section of kansai-relations.html.
+-->
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="［記事の要約。誰が・どこで・何をしているかを1〜2文で］">
+  <meta name="theme-color" content="#173f36">
+  <title>［氏名］さんインタビュー｜LOCALSHIFT</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="LOCALSHIFT トップへ"><img class="brand-logo" src="assets/logo.png" width="354" height="36" alt="LOCAL SHIFT"><span class="brand-sub">特定非営利活動法人 ローカルシフト</span></a>
+    <nav class="desktop-nav" aria-label="メインナビゲーション"><a href="index.html#about">私たちについて</a><a href="kansai-relations.html#activity">活動実績</a><a href="kansai-relations.html#interview">インタビュー</a><a href="index.html#projects">取り組み</a><a href="kansai-relations.html#contact" class="nav-contact">相談・参加する <span aria-hidden="true">↗</span></a></nav>
+    <details class="mobile-nav"><summary>メニュー <span aria-hidden="true">＋</span></summary><nav aria-label="モバイルナビゲーション"><a href="index.html">LOCALSHIFT トップ</a><a href="kansai-relations.html#activity">活動実績</a><a href="kansai-relations.html#interview">インタビュー</a><a href="index.html#projects">取り組み</a><a href="kansai-relations.html#contact">相談・参加する</a></nav></details>
+  </header>
+  <main id="main">
+    <nav class="breadcrumb wrap" aria-label="パンくずリスト"><a href="index.html">LOCALSHIFT</a><span aria-hidden="true">／</span><a href="kansai-relations.html">高知家関西リレーションズ</a><span aria-hidden="true">／</span><span aria-current="page">［氏名］さん</span></nav>
+
+    <article class="interview-article" id="top">
+      <header class="interview-header wrap">
+        <p class="eyebrow"><span class="small-line"></span> 高知家関西リレーションズ INTERVIEW #［01］</p>
+        <!-- Title pattern: ［地域名］から新しい波を！［肩書・氏名］さんが仕掛ける「［プロジェクト・活動名］」の挑戦と未来 -->
+        <h1>［地域名］から新しい波を！<br>［肩書・氏名］さんが仕掛ける「［プロジェクト・活動名］」の挑戦と未来</h1>
+        <p class="interview-byline"><time datetime="2026-00-00">［公開日 2026.00.00］</time><span>取材・文：［筆者名］</span></p>
+      </header>
+
+      <!-- Main photo: landscape 3:2. Replace the div with <img src="assets/interviews/01/main.jpg" width="1500" height="1000" alt="［写真の説明］"> -->
+      <figure class="interview-main-photo wrap"><div class="photo-placeholder">メイン写真（横長 3:2）</div><figcaption>［写真のキャプション］</figcaption></figure>
+
+      <div class="interview-body wrap">
+        <!-- 1. Lead: regional situation -> who -> theme of this article -->
+        <div class="interview-lead">
+          <p>［地域の現状と課題。例：人口減少が進む〇〇県〇〇市ですが、今、新たな活気が生まれています。］</p>
+          <p>［対象者の紹介。例：その中心となっているのが、〇〇プロジェクトの代表を務める〇〇さんです。］</p>
+          <p>［記事のテーマ。例：今回は〇〇さんに、活動を始めたきっかけや、地域に根ざした取り組みの裏側、そして今後の展望についてお話を伺いました。］</p>
+        </div>
+
+        <!-- 2. Profile -->
+        <aside class="interview-profile" aria-labelledby="profile-title">
+          <!-- Portrait: square. Replace the div with <img src="assets/interviews/01/portrait.jpg" width="600" height="600" alt="［氏名］さん"> -->
+          <div class="profile-photo"><div class="photo-placeholder">人物写真（正方形）</div></div>
+          <div>
+            <p class="profile-label" id="profile-title">PROFILE</p>
+            <p class="profile-name">［氏名］<span>（［ふりがな］）</span></p>
+            <p class="profile-role">［会社名・団体名］ ［役職］</p>
+            <p>［経歴。例：〇〇県出身。大学卒業後、都内のIT企業で勤務したのち、20〇〇年に〇〇市へUターン／Iターン移住。〇〇年に現在の団体を設立し、〜〜の活動をスタート。］</p>
+          </div>
+        </aside>
+
+        <!-- 3. Q&A: past (Q1) -> present (Q2-Q4) -> future (Q5-Q6) -->
+        <section class="interview-qa" aria-label="インタビュー本編">
+          <p class="qa-chapter"><span>01</span>はじまり</p>
+          <!-- Q1 points: reason for moving, feelings for hometown, formative experience, local issue to solve -->
+          <div class="qa-item"><h2><span class="qa-q">Q1</span>この地域で活動を始めようと思った「きっかけ」は何ですか？</h2><p>［回答］</p></div>
+
+          <p class="qa-chapter"><span>02</span>壁と、その先へ</p>
+          <!-- Q2 points: funding, lack of people, treated as an outsider, value gaps with residents -->
+          <div class="qa-item"><h2><span class="qa-q">Q2</span>実際に活動を始めてみて、最初に行き詰まったことや「壁」はありましたか？</h2><p>［回答］</p></div>
+          <!-- Q3 points: turning point, key person, hands-on efforts to involve locals -->
+          <div class="qa-item"><h2><span class="qa-q">Q3</span>その壁をどのように乗り越えましたか？</h2><p>［回答］</p></div>
+
+          <!-- Optional photo inside the body. Delete if unused. -->
+          <figure class="interview-photo"><div class="photo-placeholder">本文中の写真（任意）</div><figcaption>［写真のキャプション］</figcaption></figure>
+
+          <!-- Q4 points: numbers (sales, new residents) and qualitative change in mindset / atmosphere -->
+          <div class="qa-item"><h2><span class="qa-q">Q4</span>現在の活動を通じて、地域にどのような「変化」が起きていると感じますか？</h2><p>［回答］</p></div>
+
+          <p class="qa-chapter"><span>03</span>これから</p>
+          <!-- Q5 points: outsider view, rediscovered potential, nature, people -->
+          <div class="qa-item"><h2><span class="qa-q">Q5</span>［地域名］の「ここが一番の魅力だ」と感じる部分はどこですか？</h2><p>［回答］</p></div>
+          <!-- Q6 points: 3-5 year vision, expansion plans, what the region should become -->
+          <div class="qa-item"><h2><span class="qa-q">Q6</span>今後の展望や、次に挑戦したいことを教えてください。</h2><p>［回答］</p></div>
+        </section>
+
+        <!-- 4. Message to readers (Q7) -->
+        <section class="interview-message" aria-labelledby="message-title">
+          <p class="profile-label">MESSAGE</p>
+          <h2 id="message-title"><span class="qa-q">Q7</span>地方創生に関心がある方や、これから地域で何かを始めたいと考えている読者へ、メッセージをお願いします。</h2>
+          <!-- Points: a push forward, advice for taking action, "come visit 〇〇 first" -->
+          <p>［回答］</p>
+        </section>
+
+        <!-- 5. Editor's note + related links -->
+        <section class="interview-afterword" aria-labelledby="afterword-title">
+          <h2 id="afterword-title">編集後記</h2>
+          <p>［取材を通じて感じたこと・記事の総括］</p>
+          <h3>関連リンク</h3>
+          <ul class="interview-links">
+            <li><a class="text-link" href="https://example.com/" target="_blank" rel="noopener noreferrer">［公式サイト名］ <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブで開きます）</span></a></li>
+            <li><a class="text-link" href="https://example.com/" target="_blank" rel="noopener noreferrer">［Instagram などのSNS］ <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブで開きます）</span></a></li>
+          </ul>
+        </section>
+
+        <a class="text-link interview-back" href="kansai-relations.html#interview"><span aria-hidden="true">←</span> インタビュー一覧へ戻る</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-main"><a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-white.png" width="354" height="36" alt="LOCAL SHIFT"><span class="brand-sub">特定非営利活動法人 ローカルシフト</span></a><nav class="footer-links" aria-label="フッターナビゲーション"><a href="index.html">LOCALSHIFT トップ</a><a href="kansai-relations.html#activity">活動実績</a><a href="kansai-relations.html#interview">インタビュー</a><a href="kansai-relations.html#contact">お問い合わせ</a></nav></div><div class="wrap footer-bottom"><span>© LOCALSHIFT</span><a href="#top">ページの先頭へ ↑</a></div></footer>
+</body>
+</html>
