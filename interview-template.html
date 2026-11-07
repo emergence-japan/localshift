@@ -5,7 +5,12 @@
     1. Copy this file as interview-01.html (02, 03 ...).
     2. Replace every ［...］ placeholder. Guidance is written in HTML comments.
     3. Remove <meta name="robots" content="noindex">.
-    4. Add the file and its photos to scripts/build.mjs, and add a card to the #interview section of kansai-relations.html.
+    4. Add the file and its photos to scripts/build.mjs, and add a card to the list.
+  Two series use this template:
+    - LOCALSHIFT "高知で活躍する人に、会いに行く" (default): list = interviews.html
+    - 高知家関西リレーションズ "関西で活躍する高知の人に、会いに行く": list = #interview in kansai-relations.html.
+      Change the breadcrumb middle link to kansai-relations.html (高知家関西リレーションズ),
+      the eyebrow to "高知家関西リレーションズ INTERVIEW #01", and the back link to kansai-relations.html#interview.
 -->
 <html lang="ja">
 <head>
@@ -23,15 +28,15 @@
   <a class="skip-link" href="#main">本文へ移動</a>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="LOCALSHIFT トップへ"><img class="brand-logo" src="assets/logo.png" width="354" height="36" alt="LOCAL SHIFT"><span class="brand-sub">特定非営利活動法人 ローカルシフト</span></a>
-    <nav class="desktop-nav" aria-label="メインナビゲーション"><a href="index.html#about">私たちについて</a><a href="kansai-relations.html#activity">活動実績</a><a href="kansai-relations.html#interview">インタビュー</a><a href="index.html#projects">取り組み</a><a href="kansai-relations.html#contact" class="nav-contact">相談・参加する <span aria-hidden="true">↗</span></a></nav>
-    <details class="mobile-nav"><summary>メニュー <span aria-hidden="true">＋</span></summary><nav aria-label="モバイルナビゲーション"><a href="index.html">LOCALSHIFT トップ</a><a href="kansai-relations.html#activity">活動実績</a><a href="kansai-relations.html#interview">インタビュー</a><a href="index.html#projects">取り組み</a><a href="kansai-relations.html#contact">相談・参加する</a></nav></details>
+    <nav class="desktop-nav" aria-label="メインナビゲーション"><a href="index.html#about">私たちについて</a><a href="interviews.html">インタビュー</a><a href="index.html#news">プロジェクト</a><a href="kansai-relations.html">関西リレーションズ</a><a href="index.html#contact" class="nav-contact">相談・参加する <span aria-hidden="true">↗</span></a></nav>
+    <details class="mobile-nav"><summary>メニュー <span aria-hidden="true">＋</span></summary><nav aria-label="モバイルナビゲーション"><a href="index.html">LOCALSHIFT トップ</a><a href="interviews.html">インタビュー一覧</a><a href="index.html#news">プロジェクト</a><a href="kansai-relations.html">高知家関西リレーションズ</a><a href="index.html#contact">相談・参加する</a></nav></details>
   </header>
   <main id="main">
-    <nav class="breadcrumb wrap" aria-label="パンくずリスト"><a href="index.html">LOCALSHIFT</a><span aria-hidden="true">／</span><a href="kansai-relations.html">高知家関西リレーションズ</a><span aria-hidden="true">／</span><span aria-current="page">［氏名］さん</span></nav>
+    <nav class="breadcrumb wrap" aria-label="パンくずリスト"><a href="index.html">LOCALSHIFT</a><span aria-hidden="true">／</span><a href="interviews.html">インタビュー</a><span aria-hidden="true">／</span><span aria-current="page">［氏名］さん</span></nav>
 
     <article class="interview-article" id="top">
       <header class="interview-header wrap">
-        <p class="eyebrow"><span class="small-line"></span> 高知家関西リレーションズ INTERVIEW #［01］</p>
+        <p class="eyebrow"><span class="small-line"></span> INTERVIEW #［01］</p>
         <!-- Title pattern: ［地域名］から新しい波を！［肩書・氏名］さんが仕掛ける「［プロジェクト・活動名］」の挑戦と未来 -->
         <h1>［地域名］から新しい波を！<br>［肩書・氏名］さんが仕掛ける「［プロジェクト・活動名］」の挑戦と未来</h1>
         <p class="interview-byline"><time datetime="2026-00-00">［公開日 2026.00.00］</time><span>取材・文：［筆者名］</span></p>
@@ -104,11 +109,11 @@
           </ul>
         </section>
 
-        <a class="text-link interview-back" href="kansai-relations.html#interview"><span aria-hidden="true">←</span> インタビュー一覧へ戻る</a>
+        <a class="text-link interview-back" href="interviews.html"><span aria-hidden="true">←</span> インタビュー一覧へ戻る</a>
       </div>
     </article>
   </main>
 
-  <footer class="footer"><div class="wrap footer-main"><a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-white.png" width="354" height="36" alt="LOCAL SHIFT"><span class="brand-sub">特定非営利活動法人 ローカルシフト</span></a><nav class="footer-links" aria-label="フッターナビゲーション"><a href="index.html">LOCALSHIFT トップ</a><a href="kansai-relations.html#activity">活動実績</a><a href="kansai-relations.html#interview">インタビュー</a><a href="kansai-relations.html#contact">お問い合わせ</a></nav></div><div class="wrap footer-bottom"><span>© LOCALSHIFT</span><a href="#top">ページの先頭へ ↑</a></div></footer>
+  <footer class="footer"><div class="wrap footer-main"><a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-white.png" width="354" height="36" alt="LOCAL SHIFT"><span class="brand-sub">特定非営利活動法人 ローカルシフト</span></a><nav class="footer-links" aria-label="フッターナビゲーション"><a href="index.html">LOCALSHIFT トップ</a><a href="interviews.html">インタビュー</a><a href="index.html#news">プロジェクト</a><a href="kansai-relations.html">高知家関西リレーションズ</a><a href="index.html#contact">お問い合わせ</a></nav></div><div class="wrap footer-bottom"><span>© LOCALSHIFT</span><a href="#top">ページの先頭へ ↑</a></div></footer>
 </body>
 </html>

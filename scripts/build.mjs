@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const output = resolve(root, 'dist');
-const files = ['index.html', 'kansai-relations.html', 'style.css', 'site.js', 'favicon.svg', 'assets/logo.png', 'assets/logo-white.png', '関西リレーションズロゴ.jpeg'];
+const files = ['index.html', 'kansai-relations.html', 'interviews.html', 'style.css', 'site.js', 'favicon.svg', 'assets/logo.png', 'assets/logo-white.png', '関西リレーションズロゴ.jpeg'];
 
 // Copy only public site files, never the source documents or local archives.
 for (const entry of await readdir(join(root, '1024tosatosake'), { withFileTypes: true })) {
