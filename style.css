@@ -118,7 +118,11 @@ h2 { font-size: clamp(30px, 3.2vw, 43px); letter-spacing: .04em; }
 .photo-gallery a:hover img { transform: scale(1.035); }
 .photo-gallery figcaption { font-size: 12px; margin-top: 10px; color: var(--muted); }
 .relations { display: grid; grid-template-columns: 1fr 1fr; gap: 10%; align-items: center; }
-.relations-copy h2 { font-size: clamp(28px,3vw,40px); margin-bottom: 25px; }
+.relations-copy h3 { font-size: clamp(28px,3vw,40px); margin-bottom: 25px; }
+.project-block { border-top: 1px solid #cfd3c3; padding-top: 50px; }
+.project-block .relations { margin-bottom: 64px; }
+.project-activity-label { display: flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 700; letter-spacing: .06em; margin-bottom: 20px; }
+.project-activity-label::before { content: ""; width: 26px; height: 2px; background: var(--orange); }
 .relations-copy p:not(.eyebrow) { color: var(--muted); font-size: 15px; }
 .relations-copy .lead { font-weight: 600; color: var(--ink)!important; }
 .relations-activities { list-style: none; margin: 0 0 28px; padding: 0; border-top: 1px solid var(--line); }
@@ -358,7 +362,9 @@ h2 { font-size: clamp(30px, 3.2vw, 43px); letter-spacing: .04em; }
   .qa-item h2, .interview-message h2 { font-size: 17px; gap: 10px; }
   .interview-message { padding: 28px 22px; margin-top: 56px; }
   .interview-afterword { margin-top: 56px; }
-  .relations-copy h2 { font-size: 32px; }
+  .relations-copy h3 { font-size: 32px; }
+  .project-block { padding-top: 36px; }
+  .project-block .relations { margin-bottom: 44px; }
   .relations-copy p:not(.eyebrow) { font-size: 14px; }
   .relations-identity { padding: 28px 20px; }
   .relations-identity img { margin: 25px auto; }
